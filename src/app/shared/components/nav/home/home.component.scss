@@ -1,0 +1,117 @@
+$main-color:rgba(13, 77, 114, 1);
+
+:host{
+    min-height: 100vh;
+    font-family: "Cairo", sans-serif;
+}
+.head{
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 10%, rgba(244, 244, 244, 1) 40%),url('../../../../../assets/images/mamaa.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 75vh;
+    h1{
+        font-size: 70px;
+        font-weight: 600;
+        color: $main-color;
+        margin: 0 !important;
+    }
+    p{
+        font-size: 24px;
+        font-weight: 500;
+        color: $main-color;
+    }
+}
+.col{
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.all{
+    background-color: rgba(244, 244, 244, 1);
+    min-height: 100vh;
+}
+.middle{
+    h2{
+        font-size: 700;
+        font-size: 40px;
+        color: $main-color;
+    }
+}
+.carrd{
+    cursor: pointer;
+    h3{
+        font-size: 26px;
+        font-weight: 700;
+        color: $main-color;
+    }
+    .p1{
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        color: $main-color;
+    }
+    .p2{
+        font-size: 20px;
+        font-weight: 800;
+        color: $main-color;
+    }
+    &:hover{
+        background-color: $main-color;   
+        h3{
+            font-size: 26px;
+            font-weight: 700;
+            color: white;
+        }
+        .p1{
+            font-size: 15px !important;
+            font-weight: 600 !important;
+            color: white;
+        }
+        .p2{
+            font-size: 20px;
+            font-weight: 800;
+            color: white;
+        }
+        i{
+            color: white;
+        }
+     }
+
+}
+.art{
+    color: rgba(13, 77, 114, 1) !important;
+    font-weight: 600;
+}
+.mazeed{
+    background-color: rgba(13, 77, 114, 1);
+    border: 2px solid transparent;
+    color: white;
+    font-weight: 500;
+    transition: all .7s;
+    &:hover{
+        border-color:rgba(13, 77, 114, 1) ;
+        background-color: white;
+        color: rgba(13, 77, 114, 1);
+    }
+}
+// .fadein {
+//     animation: fadeIn 1s ease-in-out;
+//   }
+  
+//   .fadeout {
+//     animation: fadeOut 1s ease-in-out;
+//   }
+//   @keyframes fadeIn {
+//     from { opacity: 0; }
+//     to { opacity: 1; }
+//   }
+  
+//   @keyframes fadeOut {
+//     from { opacity: 1; }
+//     to { opacity: 0; }
+//   }
+  
+.fa-arrow-left{
+    color: $main-color;
+}
+

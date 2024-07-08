@@ -1,0 +1,85 @@
+:root {
+  direction: rtl;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  background-color: transparent;
+  border: 2px solid;
+  border-color: rgb(18, 116, 173);
+  border-radius: 100vh;
+}
+.owl-theme .owl-nav [class*=owl-] i {
+  color: rgb(18, 116, 173) !important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background-color: transparent;
+}
+
+@font-face {
+  font-family: logo;
+  src: url(assets/fonts/Aclonica/Aclonica-Regular.ttf);
+}
+@font-face {
+  font-family: glopal;
+  src: url(assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.reg-text {
+  color: rgb(18, 116, 173) !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}
+
+.main-btn {
+  background-color: rgb(18, 116, 173);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 600;
+  border: unset;
+}
+
+.logo-text {
+  color: rgb(18, 116, 173);
+  font-family: logo;
+  font-weight: 400;
+}
+
+i {
+  cursor: pointer;
+  color: rgb(142, 142, 142);
+}
+
+.main-btn {
+  background-color: rgb(18, 116, 173);
+  color: rgb(255, 255, 255);
+}
+
+.welcome {
+  font-size: 21px;
+  font-weight: 500;
+  font-family: glopal;
+  color: rgb(0, 0, 0);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.ngx-pagination li {
+  font-weight: 600;
+}
+
+.current {
+  color: white !important;
+  background-color: rgb(18, 116, 173) !important;
+  border-radius: 0.3rem !important;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg py-0 shadow-sm position-sticky top-0 z-3">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./assets/images/mamaalogo-removebg-preview.png"  class="w-75" alt=""></a>
+      <span class="logo-text fs-3">Mama Guide</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+          <li class="nav-item">
+           <i class="fa-solid fa-bell fs-1 ms-2"></i>
+          </li>
+          <li class="nav-item">
+            <span class="welcome">اهلا مينا</span>
+           </li>
+          <li class="nav-item me-2 d-flex justify-content-center">
+           <div [routerLink]="getAdmin()?'/admin':'/doctor'" class="profile py-2 px-4 rounded-circle cursor-pointer w-75"><img class="w-100" [src]="getAdmin()?'./assets/images/profile.svg':'./assets/images/medic.svg.svg'" alt=""></div>
+          </li>
+          <li class="nav-item me-3" routerLinkActive="aktive">
+            <a class="nav-link" routerLinkActive="activ" routerLink="/admin/all-artic" aria-current="page" *ngIf="getAdmin()">المقالات</a>
+            <a class="nav-link" routerLinkActive="activ" routerLink="" aria-current="page" *ngIf="getDoctor()" routerLink="/doctor/make-article">انشاء مقال</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" routerLinkActive="activ" routerLink="" aria-current="page" (click)="_AuthService.logOut()">تسجيل الخروج</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

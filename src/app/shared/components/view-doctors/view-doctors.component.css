@@ -1,0 +1,32 @@
+:host {
+  min-height: 100vh;
+  font-family: "Cairo", sans-serif;
+}
+
+.section {
+  background-color: rgba(128, 128, 128, 0.099);
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 25px;
+  color: rgb(13, 77, 114);
+  font-weight: 500;
+}
+.title span {
+  font-weight: 700;
+}
+
+.spec {
+  color: rgb(13, 77, 114) !important;
+}
+
+.translate-middle-y {
+  inset-inline-end: 2%;
+}
+
+.spp {
+  color: rgb(102, 102, 102);
+  font-weight: 400;
+  font-size: 16px;
+}/*# sourceMappingURL=view-doctors.component.css.map */

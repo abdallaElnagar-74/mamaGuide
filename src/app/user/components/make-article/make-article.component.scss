@@ -1,0 +1,9 @@
+input,textarea{
+    background-color: rgba(248, 245, 245, 1);
+    &:focus{
+        background-color: rgba(248, 245, 245, 1);
+    }
+}
+:host{
+    font-family: "Cairo", sans-serif;
+}

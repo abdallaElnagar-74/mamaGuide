@@ -1,0 +1,31 @@
+.big {
+  min-height: 100vh;
+  background-color: rgb(245, 245, 245);
+}
+
+.ik {
+  color: rgb(13, 77, 114) !important;
+}
+
+p {
+  color: rgb(102, 102, 102);
+}
+
+:host {
+  min-height: 100vh;
+  font-family: "Cairo", sans-serif;
+}
+
+h2 {
+  font-weight: 500;
+  color: rgb(13, 77, 114);
+  font-size: 25px;
+}
+h2 span {
+  font-weight: 700;
+}
+
+:host {
+  min-height: 100vh;
+  font-family: "Cairo", sans-serif;
+}/*# sourceMappingURL=hospitals.component.css.map */

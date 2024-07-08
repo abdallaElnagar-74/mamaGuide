@@ -1,0 +1,31 @@
+
+:host{
+    min-height: 100vh;
+    font-family: "Cairo", sans-serif;
+}
+.section{
+    background-color: rgba(128, 128, 128, 0.099);
+    min-height: 100vh;
+}
+.title{
+    font-size: 25px;
+    color: rgba(13, 77, 114, 1);
+    font-weight: 500;
+  
+    span{
+        font-weight: 700;
+    }
+}
+ .spec{
+    color: rgba(13, 77, 114, 1) !important;
+}
+.translate-middle-y{
+    inset-inline-end: 2%;
+}
+.spp{
+    color: rgba(102, 102, 102, 1);
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+

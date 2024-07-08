@@ -1,0 +1,32 @@
+.all {
+  background-image: url("../../../../assets/images/bgmoms.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fa-eye, .fa-eye-slash {
+  inset-inline-end: 1%;
+}
+
+.phone::-moz-placeholder {
+  text-align: end;
+}
+
+.phone::placeholder {
+  text-align: end;
+}
+
+.phone::-moz-placeholder, .pass::-moz-placeholder {
+  color: rgb(128, 128, 128) !important;
+}
+
+.phone::placeholder, .pass::placeholder {
+  color: rgb(128, 128, 128) !important;
+}
+
+.lis {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}/*# sourceMappingURL=login.component.css.map */

@@ -1,0 +1,11 @@
+:host {
+  font-family: "Cairo", sans-serif;
+}
+
+.prof {
+  background-color: rgb(18, 116, 173);
+}
+
+input:disabled {
+  background-color: rgb(248, 245, 245);
+}/*# sourceMappingURL=profile.component.css.map */

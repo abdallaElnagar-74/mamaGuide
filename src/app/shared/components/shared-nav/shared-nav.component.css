@@ -1,0 +1,31 @@
+:host {
+  font-family: "Cairo", sans-serif;
+}
+
+li a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(18, 116, 173);
+}
+
+.profile {
+  background-color: rgb(18, 116, 173);
+}
+
+i {
+  color: rgb(18, 116, 173);
+}
+
+.welcome {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(18, 116, 173);
+}
+
+.aktive {
+  font-weight: 700;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+}/*# sourceMappingURL=shared-nav.component.css.map */

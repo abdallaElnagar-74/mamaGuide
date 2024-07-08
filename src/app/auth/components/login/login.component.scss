@@ -1,0 +1,26 @@
+.all{
+    background-image: url('../../../../assets/images/bgmoms.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fa-eye,.fa-eye-slash{
+    inset-inline-end: 1%;
+}
+.phone{
+    &::placeholder{
+
+        text-align: end;
+    }
+
+}
+.phone,.pass{
+    &::placeholder{
+        color: rgba(128, 128, 128, 1) !important;
+    }
+}
+.lis{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}

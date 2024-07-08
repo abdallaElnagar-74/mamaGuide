@@ -1,0 +1,29 @@
+
+<section class="all vh-100">
+   <div class="container">
+    <div class="row justify-content-center vh-100 align-items-center">
+        <div class="col-md-6">
+        <div class="card p-5 rounded-5">
+            <h1 class="welcome"> مرحبا بكم فى <span class="logo-text">Mama Guide</span></h1>
+            <h1 class="title mt-2">تسجيل الدخول</h1>
+            <form action="" class="mt-5" [formGroup]="loginForm" (ngSubmit)="handleLogin()">
+                <!-- phone -->
+                <label for="phone">ادخل رقم الهاتف </label>
+                <input formControlName="phoneNumber" #phone type="tel" class="form-control w-100 mt-2 phone" placeholder="رقم الهاتف" name="" id="phone">
+                <!-- password  -->
+                <label for="" class="mt-4">ادخل كلمة المرور</label>
+                <div class="position-relative">
+                    <input formControlName="password" #pass [type]="eye?'text':'password'" class="form-control mt-2 pass" placeholder="كلمة المرور" name="" id="">
+                    <i class="fa-solid position-absolute top-50 translate-middle-y" (click)="eye=!eye" [class]="eye?'fa-eye':'fa-eye-slash'"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center my-3">
+                    <span class="lis">ليس لديك حساب <span class="reg-text cursor-pointer" routerLink="/auth/register-doctor">سجل الان</span></span>
+                    <span class="reg-text cursor-pointer">هل نسيت كلمة المرور؟</span>
+                </div>
+                <button class="main-btn rounded-3 d-block me-auto py-2 px-5 mt-4" type="submit">تسجيل الدخول</button>
+            </form>
+        </div>
+        </div>
+    </div>
+   </div>
+    </section>

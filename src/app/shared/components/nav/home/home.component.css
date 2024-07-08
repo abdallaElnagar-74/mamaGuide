@@ -1,0 +1,102 @@
+:host {
+  min-height: 100vh;
+  font-family: "Cairo", sans-serif;
+}
+
+.head {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, rgb(244, 244, 244) 40%), url("../../../../../assets/images/mamaa.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 75vh;
+}
+.head h1 {
+  font-size: 70px;
+  font-weight: 600;
+  color: rgb(13, 77, 114);
+  margin: 0 !important;
+}
+.head p {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(13, 77, 114);
+}
+
+.col {
+  height: 72vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.all {
+  background-color: rgb(244, 244, 244);
+  min-height: 100vh;
+}
+
+.middle h2 {
+  font-size: 700;
+  font-size: 40px;
+  color: rgb(13, 77, 114);
+}
+
+.carrd {
+  cursor: pointer;
+}
+.carrd h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(13, 77, 114);
+}
+.carrd .p1 {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: rgb(13, 77, 114);
+}
+.carrd .p2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(13, 77, 114);
+}
+.carrd:hover {
+  background-color: rgb(13, 77, 114);
+}
+.carrd:hover h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+}
+.carrd:hover .p1 {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: white;
+}
+.carrd:hover .p2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+.carrd:hover i {
+  color: white;
+}
+
+.art {
+  color: rgb(13, 77, 114) !important;
+  font-weight: 600;
+}
+
+.mazeed {
+  background-color: rgb(13, 77, 114);
+  border: 2px solid transparent;
+  color: white;
+  font-weight: 500;
+  transition: all 0.7s;
+}
+.mazeed:hover {
+  border-color: rgb(13, 77, 114);
+  background-color: white;
+  color: rgb(13, 77, 114);
+}
+
+.fa-arrow-left {
+  color: rgb(13, 77, 114);
+}/*# sourceMappingURL=home.component.css.map */

@@ -1,0 +1,28 @@
+.main{
+    background-image: url('../../../../assets/images/bgmoms.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+:host{
+    font-family: "Cairo", sans-serif;
+}
+#phone{
+    &::placeholder{
+
+        text-align: end;
+    }
+
+}
+.row1{
+    min-height: 100vh;
+}
+input{
+    &::placeholder{
+        color: rgba(128, 128, 128, 1) !important;
+    }
+}
+.fa-eye,.fa-eye-slash{
+    inset-inline-end: 1%;
+}

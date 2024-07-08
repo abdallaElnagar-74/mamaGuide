@@ -1,0 +1,25 @@
+:host{
+    font-family: "Cairo", sans-serif;
+}
+.prof{
+    background-color: rgba(18, 116, 173, 1);
+}
+input{
+    &:disabled{
+    background-color: rgba(248, 245, 245, 1);
+    }
+}
+i{
+    color: rgba(13, 77, 114, 1);
+}
+h4{
+    font-size: 23px;
+    color: rgba(13, 77, 114, 1);
+    font-weight: 700;
+}
+:host{
+    font-family: "Cairo", sans-serif;
+}
+.carrrd{
+    background-color: rgba(248, 245, 245, 1);
+}

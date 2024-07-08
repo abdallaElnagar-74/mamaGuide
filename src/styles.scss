@@ -1,0 +1,85 @@
+:root{
+    direction: rtl;
+    
+
+}
+.owl-theme .owl-nav [class*=owl-]{
+    background-color: transparent;
+    border: 2px solid;
+    border-color:rgba(18, 116, 173, 1);
+    border-radius: 100vh;
+    i{
+        color: rgba(18, 116, 173, 1) !important;
+    }
+    &:hover{
+        background-color: transparent;
+    }
+}
+@font-face {
+    font-family: logo;
+    src: url(assets/fonts/Aclonica/Aclonica-Regular.ttf);
+}
+@font-face {
+    font-family: glopal;
+    src: url(assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+$main-color:rgba(18, 116, 173, 1);
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.reg-text{
+    color: $main-color !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
+.main-btn{
+    background-color: $main-color;
+    color: rgba(255, 255, 255, 1);
+    font-size: 17px;
+    font-weight: 600;
+    border: unset;
+}
+.logo-text{
+    color: $main-color;
+    font-family: logo;
+    font-weight: 400;
+}
+i{
+    cursor: pointer;
+    color: rgba(142, 142, 142, 1);
+}
+.main-btn{
+    background-color: $main-color;
+    color: rgba(255, 255, 255, 1);
+    transition: all .7s;
+    border: .125rem solid transparent;
+    &:hover{
+        background-color: white;
+        color: $main-color;
+        border-color: $main-color;
+    }
+}
+.welcome{
+    font-size: 21px;
+    font-weight: 500;
+    font-family: glopal;
+    color: rgba(0, 0, 0, 1);
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.75) !important;
+}
+.title{
+    color: rgba(0, 0, 0, 1);
+    font-size: 40px;
+    font-weight: 500;
+}
+    .ngx-pagination li{
+         font-weight:600 ;
+        
+     }
+ .current{
+    color: white !important;
+    background-color: $main-color !important;
+    border-radius: .3rem !important;
+ }

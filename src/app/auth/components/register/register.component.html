@@ -1,0 +1,86 @@
+<div class="main">
+    <div class="container">
+        <div class="row row1 justify-content-center align-items-center">
+            <div class="col-md-7">
+                <div class="card p-3 rounded-5">
+                    <!-- title  -->
+                    <h1 class="welcome"> مرحبا بكم فى <span class="logo-text">Mama Guide</span></h1>
+                    <h1 class="title mt-2">إنشاء حساب</h1>
+                    <!-- inputs  -->
+                    <form action="" [formGroup]="registerForm" (ngSubmit)="handleRegister()">
+                        <div class="row mt-5">
+                            <!-- first name  -->
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">الاسم الاول</label>
+                                <input formControlName="firstName" type="text" id="name" class="form-control border-2 border-secondary" placeholder="ادخل الاسم الاول">
+                            </div>
+                            <!-- last name  -->
+                            <div class="col-md-6">
+                                <label for="lname" class="form-label">الاسم الاخير</label>
+                                <input formControlName="lastName" type="text" id="lname" class="form-control border-2 border-secondary" placeholder="ادخل الاسم الاخير">
+                            </div>
+                        </div>
+                        <!-- country&govern  -->
+                        <div class="row mt-2">
+                            <!-- country  -->
+                            <div class="col-md-6">
+                                <label for="city" class="form-label">المدينة</label>
+                                <input formControlName="city" type="text" id="city" class="form-control border-2 border-secondary" placeholder="ادخل اسم المدينة">
+                            </div>
+                            <!-- governorate -->
+                            <div class="col-md-6">
+                                <label for="govern" class="form-label">المحافظة</label>
+                                <input formControlName="governorate" type="text" id="govern" class="form-control border-2 border-secondary" placeholder="ادخل اسم المحافظة">
+                            </div>
+                        </div>
+                        <!-- phone  -->
+                        <div class="mt-2">
+                            <label for="phone" class="form-label">رقم الهاتف</label>
+                            <input formControlName="phoneNumber" type="tel" id="phone" class="form-control border-2 border-secondary" placeholder="ادخل رقم الهاتف">
+                        </div>
+                        <!-- password  -->
+                        <div class="mt-2">
+                            <label for="city" class="form-label">كلمة المرور</label>
+                            <div class="position-relative">
+                                <input formControlName="password" [type]="eye?'text':'password'" class="form-control pass border-2 border-secondary" placeholder="ادخل كلمه المرور" name="" id="">
+                            <i class="fa-solid position-absolute top-50 translate-middle-y" (click)="eye=!eye" [class]="eye?'fa-eye':'fa-eye-slash'"></i>
+                            </div>
+                        </div>
+                        <!-- sex  -->
+                        <label for="" class="mt-2">الجنس</label>
+                        <div class="row align-items-center justify-content-evenly mt-2 g-3">
+                            <div class="col-md-6 d-flex justify-content-end">    
+                          <div class="w-100 form-check card d-flex py-2 justify-content-between flex-row align-items-center border-2 border-secondary">
+                                      <div class="container d-flex align-items-center justify-content-between">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            ذكر
+                                          </label>
+                                          <input formControlName="gender" value="true" name="gender" class="form-check-input border-secondary border-1 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                
+                                      </div>  
+                            </div>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-start">
+                                <div class="w-100 form-check card border-2 border-secondary d-flex py-2 justify-content-between flex-row align-items-center">
+                                    <div class="container d-flex align-items-center justify-content-between ">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            أنثي
+                                          </label>
+                                          <input name="gender"  value="false" formControlName="gender" class="form-check-input border-secondary border-1 cursor-pointer" value="false" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                    </div>
+                                  </div>
+                                  
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center my-3">
+                            <span class="lis">لديك حساب ؟</span>
+                            <span class="reg-text cursor-pointer me-1" routerLink="/auth/login">تسجيل الدخول</span>
+                        </div>
+                        <!-- registerButton -->
+                        <button class="main-btn w-25 rounded-2 d-block me-auto py-2 mt-4" [disabled]="registerForm.invalid">إنشاء حساب</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

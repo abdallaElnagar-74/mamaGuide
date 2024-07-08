@@ -1,0 +1,23 @@
+<section class="big overflow-auto">
+<div class="container">
+  <input type="text" placeholder="search ..." class="form-control mt-5 mb-4 w-75 mx-auto rounded-pill" [(ngModel)]="searchValue" (keyup)="getAllHospitals()">
+    <div class="row  justify-content-between g-4 mb-5">
+        <div class="col-md-5 bg-white rounded-4" *ngFor="let item of hospitass">
+            <div>
+              <div class="row align-items-center g-3">
+                <div class="col-md-6 pe-0">
+                    <img src="./assets/images/hos.png" class="rounded-end-4" alt="">
+                </div>
+                <div class="col-md-6">
+                  <h2>مستشفي <span>{{item.name}}</span></h2>
+                  <span *ngFor="let item of [1,2,3,4,5]"><i class="fa-solid fa-star text-warning ms-1"></i></span>
+                  <p class="mb-0 mt-2"><i class="fa-solid fa-location-dot ik ms-1"></i> {{item.governorate}} : {{item.street}}</p>
+                  <p class="mb-0 mt-2"><i class="fa-solid fa-hospital ik ms-1"></i> {{item.governorate}}</p>
+                  <p class="mb-0 mt-2"><i class="fa-solid fa-phone ik ms-1"></i> {{item.phoneNumber}}</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>

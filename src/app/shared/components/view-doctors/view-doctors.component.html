@@ -1,0 +1,45 @@
+<div class="section overflow-auto">
+    <div class="container">
+        <div class="row mt-4 g-4 justify-content-between">
+            <div class="w-75 mx-auto position-relative col-md-12">
+                <input [(ngModel)]="searchValue" type="text" class="form-control rounded-pill" placeholder="ابحث ..." name="" id="">
+                <i class="fa-solid fa-search spec position-absolute top-50 translate-middle-y"></i>
+            </div>
+
+            <div class="col-md-5" *ngFor="let item of doctors| paginate: { id: 'foo',
+            itemsPerPage: pageSizze,
+            currentPage: pageNumberr,
+            totalItems: 100}|search:searchValue ">
+                <div class="row bg-white rounded-4 align-items-center">
+                    <div class="col-md-6">
+                        <img [src]="item.gender == true ? './assets/images/male.png' : './assets/images/female.png'"alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="title">دكتور <span>{{item.firstName+' '+item.lastName}}</span></p>
+                        <span *ngFor="let item of [1,2,3,4,5]"><i class="fa-solid fa-star text-warning ms-1"></i></span>
+                        <div class="mt-2 d-flex flex-column justify-content-center">
+                            <span class="spp mb-2"><i class="fa-solid fa-stethoscope spec ms-1"></i> {{item.speciality}}</span>
+                            <span class="spp mb-2"><i class="fa-solid fa-location-dot spec ms-1"></i> الزقازيق: {{item.city}}</span>
+                            <span class="spp"><i class="fa-solid fa-hospital spec mb-2 ms-1"></i> مستشفى {{item.governorate}}</span>
+                            <span class="spp"><i class="fa-solid fa-phone spec ms-1"></i> {{item.phoneNumber}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="d-flex justify-content-center mt-5">
+    <pagination-controls  id="foo"
+    (pageChange)="pageChanged($event)"
+    (pageBoundsCorrection)="pageChanged($event)"
+    [maxSize]="9"
+    [directionLinks]="true"
+    [responsive]="true"
+    previousLabel=""
+    nextLabel=""
+    screenReaderPaginationLabel="Pagination"
+    screenReaderPageLabel="page"
+    screenReaderCurrentLabel="You're on page">
+</pagination-controls>
+</div>
+</div>
